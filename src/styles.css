@@ -1,0 +1,122 @@
+/*body{
+   padding-bottom: 50px; 
+}
+.main-container {
+    margin-top: 20px;
+}*/
+.navbar-expand-lg{
+  background-color: #95a698;
+  color: #e6c9aa;
+}
+.navbar-toggler{
+  color: rgb(31, 27, 27);
+}
+body{
+  font-family:fantasy;
+}
+.container-fluid-header{
+  text-align: center;
+  background-color: #95a698;
+  color: #e6c9aa; 
+  padding-bottom: 2rem;
+}
+.profile-img { 
+  text-align: justify;
+  width: 50%;
+  border-radius: 50%;
+  }
+.psi-img{
+  width: 10%;
+  height: 30%;
+}
+.container-fluid-header h4{
+  color: #d6c5a1;
+}
+.container-fluid-header h5{
+  color: black;
+}
+.btn-outline-light{
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.container-below-banner{
+  background-color:#e6c9aa;
+  text-align:left;
+  font-size: 1rem;
+  font-family: cursive;
+  padding: 30px;
+}
+/*------------- carousel --------------------*/
+.naranja-img-fluid{
+  width: 100%;
+  height:100%;
+  padding:0;
+}
+.carousel-caption h6{
+  color: rgba(228, 40, 27, 0.931);
+}
+/*----------- concepto nuevo---------------*/
+.container-fluid-concepto-nuevo{
+  background-color:#e6c9aa;
+  font-size: 1.2rem;
+}
+
+#que-hacer,#bienvenido{
+  padding-top: 30px;
+}
+p,h3,ul{
+text-align: center;
+color: #154f22;
+}
+/*--------- terapias----------------------*/
+.card-deck, .container-cartas{
+ background-color:#e6c9aa;
+  font-size: 1rem;  
+}
+.card-deck{
+  padding-bottom: 30px;
+  padding-top: 50px;
+}
+.card{
+  margin-left: 10px;
+}
+.card-text, .card-title{
+  text-align: center;
+  color: #154f22;
+}
+
+.img-fluid-tcc{
+  height:50%;
+  width:100%;
+}
+
+
+/* animations */
+.animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+  }
+  
+  .fast {
+    -webkit-animation-duration: 0.4s;
+    animation-duration: 0.4s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+  
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .fadeIn {
+    animation-name: fadeIn;
+  }

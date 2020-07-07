@@ -1,0 +1,120 @@
+<div class="container-fluid-header">
+    <div class="row">
+        <div class="col-sm-3">
+        <h4><strong>ESTRELLA RIBÓ SALIETTI<br>TERAPIA <br>HOLISTICA<br> INTEGRATIVA</strong></h4>
+        </div>
+        <div class="col-sm-3">
+            <h5>Psicóloga/Terapeuta</h5>           
+            <img src="assets/img/dedo.png" class="profile-img img-fluid" alt="ERS">
+        </div>
+        <div class="col-sm-3">
+            <h5>Holística Integradora</h5>
+            <img src="assets/img/dedo.png" class="profile-img img-fluid" alt="ERS">
+        </div>
+        <div class="col-sm-3">
+          <h4><strong>ESTRELLA RIBÓ SALIETTI<br>TERAPIA <br>HOLISTICA<br> INTEGRATIVA</strong></h4>
+        </div>
+    </div> <!------ row1 ------>
+    <div class="row">
+        <div class="col-sm-4">
+        
+        </div>
+        <div class="col-sm-4">
+        <img src="assets/img/construyendo-raises.png" class="psi-img img-fluid" alt="ERS">
+        </div>
+        <div class="col-sm-4">
+        </div>
+    </div> <!------ row2---------->
+    <div class="row button">
+        <div class="col-sm-4">
+        </div>
+        <div class="col-sm-4">
+        <button type="button" class="btn-outline-light" data-toggle="collapse" data-target="#demo">CONSTRUYENDO RAÍCES</button>
+        <div id="demo" class="collapse">
+        <h6>La vida te pide: ACTÚA <br>
+        El corazón te susurra: SIENTE <br>
+        La brisa te acaricia: FLUYE <br>
+        El agua te arrastra: RELÁJATE <br>
+        La Tierra te pide: DESPIERTA!!!”</h6>
+        </div>
+        </div>
+        <div class="col-sm-4">
+        </div>
+    </div> <!------ row2---------->
+</div>
+<div class="container-below-banner">
+<h2>Contáctame:</h2>
+<form autocomplete="off" (ngSubmit) = "guardar( forma )" #forma = "ngForm">
+
+  <div>
+
+    <div class="form-group row">
+      <label class="col-2 col-form-label">Nombre</label>
+      <div class="col-8">
+
+        <input class="form-control"
+               type="text"
+               name="nombre"
+               placeholder="Nombre"
+               [class.is-invalid]="nombre.invalid && nombre.touched"
+               [ngModel]="usuario.nombre"
+               required
+               minlength="5"
+               #nombre= "ngModel">
+        <small *ngIf = "nombre.invalid && nombre.touched"
+        class="form-text text-danger">Ingrese 5 letras</small>
+      </div>
+    </div>
+
+    <div class="form-group row">
+      <label class="col-2 col-form-label">Mensaje</label>
+      <div class="col-8">
+
+        <input class="form-control"
+               type="text"
+               name="mensaje"
+               placeholder="mensaje"
+               [class.is-invalid]="mensaje.invalid && mensaje.touched"
+               [ngModel]="usuario.nombre"
+               required
+               minlength="15"
+               #mensaje= "ngModel">
+        <small *ngIf = "mensaje.invalid && mensaje.touched"
+               class="form-text text-danger">Ingrese 15 letras</small>   
+      </div>
+    </div>
+
+  </div>
+
+  <div class="form-group row">
+    <label class="col-2 col-form-label">Correo</label>
+    <div class="col-8">
+
+      <input class="form-control"
+             type="email"
+             name="correo"
+             placeholder="Correo electrónico"
+             [class.is-invalid]="correo.invalid && correo.touched"
+             ngModel
+             required
+             pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$"
+             #correo= "ngModel">
+      <small *ngIf = "correo.invalid && correo.touched"
+             class="form-text text-danger">el correo es obligatorio</small>    
+             
+    </div>
+  </div>
+
+
+
+  <div class="form-group row">
+    <label class="col-2 col-form-label">&nbsp;</label>
+    <div class="input-group col-md-8">
+      <button type="submit" class="btn btn-outline-primary">
+        Guardar
+      </button>
+    </div>
+  </div>
+
+</form>
+
